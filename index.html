@@ -11,16 +11,44 @@
   </head>
   <body>
     <nav>
-    <div class="background">
-        <h1>Shopify</h1> 
-    </div>
+    <div class="top-navigation-bar">
 
+      <div class="shopify-logo">
+        <img src="searchbox.svg"/>
+      </div>
+
+        <div class="search-box">
+          <input type="search" placeholder="Search">
+        </div>
+
+        <!-- The notification button -->
+
+        
+        <div class="notification">
+          <button id="alertBtn">
+            <img src="notification.svg" />
+          </button>
+        </div>
+
+        <div id="alertBox" class="alertbox">
+          <div class="alert-head">
+            Alert
+          </div>
+        </div>
+
+
+        <button class="btn" id="mybutton">
+          <div class="btn-frame">
+            <p>Davii collections</p>  
+            <span class="span-btn">DC</span>    
+           </div>
+        </button>  
     </nav>
   
 
 
   
 
-  <script src="./app.js"></script>
+  <script src="app.js"></script>
   </body>
 </html>
