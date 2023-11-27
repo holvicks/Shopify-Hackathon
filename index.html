@@ -14,15 +14,17 @@
     <div class="top-navigation-bar">
 
       <div class="shopify-logo">
-        <img src="searchbox.svg"/>
+      
       </div>
 
         <div class="search-box">
           <input type="search" placeholder="Search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.3226 13.3833C11.3996 14.0841 10.2484 14.5 9 14.5C5.96243 14.5 3.5 12.0376 3.5 9C3.5 5.96243 5.96243 3.5 9 3.5C12.0376 3.5 14.5 5.96243 14.5 9C14.5 10.2484 14.0841 11.3996 13.3833 12.3226L16.2803 15.2197C16.5732 15.5126 16.5732 15.9874 16.2803 16.2803C15.9874 16.5732 15.5126 16.5732 15.2197 16.2803L12.3226 13.3833ZM13 9C13 11.2091 11.2091 13 9 13C6.79086 13 5 11.2091 5 9C5 6.79086 6.79086 5 9 5C11.2091 5 13 6.79086 13 9Z" fill="#B5B5B5"/>
+          </svg>
         </div>
 
         <!-- The notification button -->
-
         
         <div class="notification">
           <button id="alertBtn">
@@ -97,83 +99,233 @@
     </nav>
   
     <div class="main">
-      <div class="hero">
-      <p>Extend your trial for one month</p>
+      <div class="hero" id="heroid">
+        <div class="hero-sub">
+          <div class="hero-subgroup">
+        <p>Extend your trial for $1/month for 3 months on select plans.</p>
 
        <div class="hero-content">
+        <img src="https://crushingit.tech/hackathon-assets/icon-cross.svg" class="hero-img1" width="20" height="20" id="cancelhero" />
         <button class="hero-button">
           Select a plan
         </button>
-        <img src="https://crushingit.tech/hackathon-assets/icon-cross.svg" width="20" height="20" />
+        <img src="https://crushingit.tech/hackathon-assets/icon-cross.svg" class="hero-img2" width="20" height="20" id="cancelhero2" />
       </div>
+    </div>
 
+      
+      <button class="hero-button2">
+        Select a plan
+      </button>
+
+      </div>
       </div>
 
      <div class="hero-section">
-      <h3>Setup guide
-        <span class="hero-p-text"><p>Use this personalized guide to get your store up and running.</p></span>
-      </h3>
-
-      <div class="hero-section-loader">
-      <p>1/5 Completed</p>
-       <svg xmlns="http://www.w3.org/2000/svg" width="72" height="4" viewBox="0 0 72 4" fill="none">
-      <rect width="72" height="4" rx="2" fill="#E3E3E3"/>
-      <rect width="18" height="4" fill="#1A1A1A"/>
-      </svg>
-      </div>
-
-    <div class="hero-section-content">
-    
-      <div class="col-70">
-        <div class="hero-section-content-header">
-
-<!-- Create an element to display the icon -->
-<div class="icon-container">
-
-</div>
-
-
-      
-        <h3>Customise your online store</h3>
-      </div>
-
-        <div class="hero-section-content-body" >
-          Choose a theme and add your logo, colors, and images to reflect your brand.<br /> <span class="learn-more">Learn more</span>
-      </div>
-
-      <button class="hero-section-button">
-        Customise theme
-          </button>
-
-          
-      </div>
-
-      <div class="col-30">
-        <img src="https://crushingit.tech/hackathon-assets/customise-store.png" >
-      </div>
-
- 
-
-
-
+     <div class="hero-sectioncontent">
+        <div class="sub__header">
+          <div>
+            <h5>Setup guide</h5>
+            <div class="sub-text">
+              Use this personalized guide to get your store up and running
+            </div>
+            <div>
+             <span> 
+                <input id="range" class="rangeSlider" disabled type="range" max="5" min="0"  value="5"
+              /><p> <span id="demo"></span></p></span>
+            </div>
+          </div>
   
+          <div class="arrowDown">
+            <img
+              src="https://crushingit.tech/hackathon-assets/icon-arrow-down.svg"
+              alt="arrowDown"
+            />
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item active">
+            <button
+              class="accordion-buttons"
+              id="accordion-button-1"
+              aria-expanded="true"
+            >
+            <div class="icon-container" data-hero-id="hero1">
+              <!-- The icon will be displayed here -->
+            </div>
+            <span class="accordion-title">Customize your online store</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion_item">
+                <p>
+                  Choose a theme and add your logo, colors, and images to
+                  reflect your brand 
+                  <span
+                    ><a
+                      href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes"
+                      >Learn more</a
+                    ></span
+                  >
+                </p>
+  
+                <button class="btn-theme">Customize theme</button>
+              </div>
+  
+              <img
+                src="https://crushingit.tech/hackathon-assets/customise-store.png"
+                alt="image-1"
+                id="image-1"
+              />
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button
+              class="accordion-buttons"
+              id="accordion-button-1"
+              aria-expanded="false"
+            >
+            <div class="icon-container" data-hero-id="hero2">
+              <!-- The icon will be displayed here -->
+            </div>
+              <span class="accordion-title">Add your first product</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion_item">
+                <p>
+                  Write a description, add photos, and set pricing for the
+                  products you plan to sell.
+                  <span
+                    ><a
+                      href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes"
+                      >Learn more</a
+                    ></span
+                  >
+                </p>
+                <div class="product__btn">
+                  <button class="btn-theme">Add product</button>
+                  
+                </div>
+              </div>
+  
+              <img
+                src="https://crushingit.tech/hackathon-assets/product.png"
+                alt="image-1"
+                id="image-1"
+              />
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button
+              class="accordion-buttons"
+              id="accordion-button-1"
+              aria-expanded="false"
+            >
+            <div class="icon-container" data-hero-id="hero3">
+              <!-- The icon will be displayed here -->
+            </div>
 
-
-   
-     </div>
-
+              <span class="accordion-title">Add a custom domain</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion_item">
+                <p>
+                  Your current domain is 222219.myshopify.com but you can add
+                  a custom domain to help customers find your online store.
+                  <span
+                    ><a
+                      href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes"
+                      >Learn more</a
+                    ></span
+                  >
+                </p>
+  
+                <button class="btn-theme">Add domain</button>
+              </div>
+  
+              <img
+                src="https://crushingit.tech/hackathon-assets/website.png"
+                alt="image-1"
+                id="image-1"
+              />
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button
+              class="accordion-buttons"
+              id="accordion-button-1"
+              aria-expanded="false"
+            >
+            <div class="icon-container" data-hero-id="hero4">
+              <!-- The icon will be displayed here -->
+            </div>
+              <span class="accordion-title">Name your store</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion_item">
+                <p>
+                  Your temporary store name is currently Davii collections.
+                  The store name appears in your admin and your online store.
+                  <span
+                    ><a
+                      href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes"
+                      >Learn more</a
+                    ></span
+                  >
+                </p>
+  
+                <button class="btn-theme">Name store</button>
+              </div>
+  
+              <img
+                src="https://crushingit.tech/hackathon-assets/name-store.png"
+                alt="image-1"
+                id="image-1"
+              />
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button
+              class="accordion-buttons"
+              id="accordion-button-1"
+              aria-expanded="false"
+            >
+            <div class="icon-container" data-hero-id="hero5">
+              <!-- The icon will be displayed here -->
+            </div>
+              <span class="accordion-title">Set up a payment provider</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion_item">
+                <p>
+                  Choose a payment provider to start accepting payments.
+                  You’ll need to create an account with the payment provider
+                  and set it up with your Shopify store.
+                  <span
+                    ><a
+                      href="https://help.shopify.com/en/manual/online-store/themes/customizing-themes"
+                      >Learn more</a
+                    ></span
+                  >
+                </p>
+  
+                <button class="btn-theme">Set up payment</button>
+              </div>
+  
+              <img
+                src="https://crushingit.tech/hackathon-assets/payment.png"
+                alt="image-1"
+                id="image-1"
+              />
+            </div>
+          </div>
+        </div>
      
+      </div>
      </div>
-
-
-
-
-
 
     </div>
 
 
-  
 
   <script src="app.js"></script>
   </body>
