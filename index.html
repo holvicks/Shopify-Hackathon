@@ -1,25 +1,30 @@
-
 <html lang="en">
   <head>
+     <!-- Meta information -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopify Admin</title>
+      <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./app.css" />
   </head>
   <body>
+
+
+      <!-- Header section -->
 <header role="navbar">
       <a title="shopify.com" aria-label="logo" href="https://www.shopify.com" target="_blank" class="shopify-logo">
 				<img class="logo" src="https://crushingit.tech/hackathon-assets/shopify-icon.svg" alt="logo" />
 			</a>
-
+      <!-- Search form -->
          <form>
             <img src="https://crushingit.tech/hackathon-assets/icon-search.svg" alt="magnifying glass" />
             <input aria-label="search-bar" type="search" placeholder="Search" name="search" id="search" class="searchbox" />
         </form>
-        <!-- The notification button -->
+
+        <!-- Notification and user profile buttons -->
         <div class="user-notification">
           <button id="alertBtn" aria-label="notification"  class="notification-button">
             <img src="https://crushingit.tech/hackathon-assets/icon-bell.svg" alt="notification-bell" />
@@ -31,10 +36,10 @@
           </button>    
         </div>
 
+         <!-- Notification alert box -->
         <div id="alertBox" class="alertbox">
           <div class="alert-group-head">
           <p>Alert</p>
-            
           <div class="alert-icons">
 						<button>
 							<img
@@ -55,6 +60,7 @@
           Alerts about your store and account will show here
         </div>
         </div>
+
 <!-- ===== User acct =====-->
      
         <div class="user-profile-alert" id="userProfileAlert">
@@ -92,6 +98,7 @@
       </header>
   
 
+        <!-- Main content section -->
     <main>
       <div class="hero" id="heroid">
         <p>Extend your trial for $1/month for 3 months on select plans.</p>
@@ -132,7 +139,9 @@
         </div>
       </div>
         
+      <!-- Menu items -->
         <div class="accordion">
+           <!-- Menu item 1 -->
           <div class="menu-item item1 item--active" role="menuitem">
             <div class="container">
 							<button class="check" role="menuitemcheckbox" aria-label="check" aria-checked="false">
@@ -160,6 +169,7 @@
 						</div>
           </div>
 
+          <!-- Menu item 2 -->
           <div class="menu-item item2" role="menuitem">
 						<div class="container">
 							<button class="check" role="menuitemcheckbox" aria-checked="false">
@@ -187,6 +197,8 @@
 								alt="products" />
 						</div>
 					</div>
+
+          <!-- Menu item 3 -->
 					<div class="menu-item item3" role="menuitem">
 						<div class="container">
 							<button class="check" role="menuitemcheckbox" aria-checked="false">
@@ -214,6 +226,8 @@
 								alt="domain" />
 						</div>
 					</div>
+
+           <!-- Menu item 4 -->
 					<div class="menu-item item4" role="menuitem">
 						<div class="container">
 							<button class="check" role="menuitemcheckbox" aria-checked="false">
@@ -271,14 +285,10 @@
 					</div>
 
         </div>
-     
-      
     </section>
-
     </main>
 
-
-
+      <!-- JavaScript file -->
   <script src="app.js"></script>
   </body>
 </html>
