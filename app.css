@@ -59,7 +59,7 @@ header{
 	padding: 8px;
 	display: flex;
 	align-items: center;
-	background: #1c181d;
+	background: #1A1A1A;
  
 }
 
@@ -132,6 +132,7 @@ header form {
 	flex: 0 0 40%;
 	display: flex;
 	align-items: center;
+	gap:10px;
 	width: 70%;
 	height: 30px;
 	margin-right: auto;
@@ -159,7 +160,6 @@ header form:focus-within {
 .searchbox {
 	flex: 0 0 90%;
 	max-width: 70%;
-	margin: 0 auto;
 	color: var(--text-dark-1);
 	font-size: 14px;
 	background: none;
@@ -224,7 +224,7 @@ header form:focus-within {
 .btn-userprofile:hover,
 .user-notification:hover {
 	cursor: pointer;
-	background: var(--nav-dark-1);
+	background: none;
 }
 
 
